@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AILIXI的驿站</title>
+    <meta name="description" content="AILIXI的驿站 —— お誕生日おめでとう、Nariko！">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating decorative elements -->
+    <div class="float-decoration sparkle sparkle-1">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 0L22.5 17.5L40 20L22.5 22.5L20 40L17.5 22.5L0 20L17.5 17.5L20 0Z" fill="#FFB4A2" opacity="0.6"/>
+        </svg>
+    </div>
+    <div class="float-decoration sparkle sparkle-2">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 0L17 13L30 15L17 17L15 30L13 17L0 15L13 13L15 0Z" fill="#D4C5F9" opacity="0.6"/>
+        </svg>
+    </div>
+    <div class="float-decoration sparkle sparkle-3">
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.5 0L19.5 15.5L35 17.5L19.5 19.5L17.5 35L15.5 19.5L0 17.5L15.5 15.5L17.5 0Z" fill="#B8E6D5" opacity="0.6"/>
+        </svg>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-wrapper">
+            <a class="logo" href="#home">
+                <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="45" r="35" fill="#FFB4A2"/>
+                    <circle cx="38" cy="38" r="5" fill="#8DC4B2"/>
+                    <circle cx="62" cy="38" r="5" fill="#8DC4B2"/>
+                    <path d="M35 55Q50 65 65 55" stroke="#8DC4B2" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    <circle cx="30" cy="35" r="8" fill="#FFD4C4"/>
+                    <circle cx="70" cy="35" r="8" fill="#FFD4C4"/>
+                </svg>
+                AILIXI的驿站_生日特供
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="mainNav">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero：贺图 + 左侧文字 -->
+        <div class="hero-wrapper">
+            <section class="hero" id="home">
+                <div class="hero-media">
+                    <img src="images/hero.png" alt="AILIXI 生日贺图">
+                </div>
+                <div class="hero-content">
+                    <h1>欢迎来到<br>AILIXI的驿站<span class="h1-flower">🌸</span></h1>
+                    <p class="hero-sub">お誕生日おめでとう、Nariko！</p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">关于我</a>
+                        <a href="https://www.bilibili.com/video/BV1m9NE62EUm" target="_blank" rel="noopener noreferrer" class="btn btn-primary">观看视频</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="about-inner">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">⌈きっと 目に見えなくても ほら——⌋</p>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>AILIXI，cn爱莉喵喵/那璃/不名/PrIn，大学生，常驻北京/云南。</p>
+                        <p>相信所谓的“梦之旅程”，在无法预知的世界中不断前行。</p>
+                        <div class="about-tags">
+                            <span class="tag">The Idolm@ster</span>
+                            <span class="tag">LoveLive!!</span>
+                            <span class="tag">ボカロ</span>
+                            <span class="tag">Project SEKAI</span>
+                            <span class="tag">ウマ娘</span>
+                            <span class="tag">Geki!chumai</span>
+                            <span class="tag">Arknights</span>
+                        </div>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="images/aboutme.png" alt="关于我" class="about-photo" id="aboutPhoto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 名片展示 -->
+        <section class="cards" id="cards">
+            <h2 class="section-title">名片展示(偶大小区乱做的小区名片)</h2>
+            <div class="cards-grid">
+                <figure class="card-item">
+                    <img src="images/card-front.png" alt="名片正面">
+                </figure>
+                <figure class="card-item">
+                    <img src="images/card-back.png" alt="名片背面">
+                </figure>
+                <figure class="card-item">
+                    <img src="images/card2-front.png" alt="名片正面">
+                </figure>
+                <figure class="card-item">
+                    <img src="images/card2-back.png" alt="名片背面">
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            <p>© 2026 AILIXI All rights reserved.</p>
+            <p class="credit">Designed by <a href="https://www.tooplate.com" target="_blank" rel="nofollow">Tooplate</a></p>
+        </div>
+    </footer>
+
+    <!-- 图片放大 -->
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="关于我" id="lightboxImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
